@@ -177,7 +177,7 @@ docker run -t 8000:8000 -it your-image-id
 ### Open your web browser and go to http://your-ec2-instance-public-dns:8000/todo to see the running Django application.
 
 ---
-### Project Structure
+## Project Structure
 
 -	Dockerfile: Instructions to build the Docker image.
 
@@ -188,7 +188,8 @@ docker run -t 8000:8000 -it your-image-id
 -	views.py: Logic for handling requests and responses.
 -	templates/: HTML templates for the application.
 
-### Dockerfile Explained
+
+## Dockerfile Explained
 
 -	Base Image: Using ubuntu as the base image.
 
@@ -198,7 +199,7 @@ docker run -t 8000:8000 -it your-image-id
 -	Copy Source Code: Copy the Django application source code to the working directory.
 -	Set Entry Point: Define the entry point for the container to run the Django application.
 
-### Running the Application
+## Running the Application
 
 -	Build the Image: docker build -t todo .
 
@@ -206,22 +207,22 @@ docker run -t 8000:8000 -it your-image-id
 
 Ensure you have the necessary ports open in your firewall or security groups if running on a cloud instance.
 
-### Troubleshooting
+## Troubleshooting
 
 - Port Conflicts: If port 8000 is already in use, change the mapping in the docker run command (-p 8000:8000).
 
 - Dependency Issues: Ensure all dependencies in requirements.txt are correct and compatible with your application.
 
-### Contributing
+## Contributing
 
 Feel free to fork this repository, make improvements, and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
-### Reference
+## Reference
 https://www.youtube.com/watch?v=3IAvr_O6vao
 
-### Questions and Feedback
+## Questions and Feedback
 
 If you have any questions or feedback, please open an issue or contact me at kcubez21@gmail.com.
 
